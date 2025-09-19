@@ -80,7 +80,7 @@ dsn = "sua_string_de_conexao"
 
 ```
 projeto/
-├── monitor_queries.py      # Script principal
+├── app.py      # Script principal
 ├── scripts/               # Pasta monitorada (auto-criada)
 │   ├── query1.txt         # Arquivos com queries SQL
 │   └── query2.txt
