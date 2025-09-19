@@ -27,13 +27,13 @@ Crie a pasta `scripts` (será criada automaticamente) e adicione arquivos `.txt`
 **Exemplo de arquivo `minha_query.txt`:**
 ```sql
 SELECT 
-    BENEFICIARIO,
-    NOME,
-    EMAIL,
-    DATA_NASCIMENTO
-FROM SAM_BENEFICIARIO 
-WHERE SITUACAO = 'Ativo'
-ORDER BY NOME
+    CLIENTE.ID AS CODIGO_CLIENTE,
+    CLIENTE.NOME AS NOME_CLIENTE,
+    CLIENTE.EMAIL,
+    CLIENTE.TELEFONE,
+    TO_CHAR(CLIENTE.DATA_CADASTRO, 'DD/MM/YYYY') AS DATA_CADASTRO,
+    CIDADE.NOME AS CIDADE,
+    ESTADO.UF,...
 ```
 
 ### 3. Execução do Sistema
